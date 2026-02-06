@@ -3,7 +3,7 @@
 
 If you need help with Permit2Drive, contact us at:
 
-help+p2d@sparklerevolution.com
+help@permit2drive.com
 
 You can also include:
 - Your device type (iPhone/Android)
