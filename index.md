@@ -83,8 +83,8 @@ Learning to drive is stressful enough. Permit2Drive helps you log drives quickly
 
 Permit2Drive does not create user accounts. If you use Google Drive sync, your logs are saved to **your own Google Drive** and you can delete them at any time.
 
-- **Privacy Policy:** [Privacy Policy](privacy-policy.md)  
-- **Support:** Email us at **support@permit2drive.com** (replace with your real support email)
+- **Privacy Policy:** [Privacy Policy](/permit2drive-pages/privacy)  
+- **Support:** Email us at info@permit2drive.com
 
 ---
 
