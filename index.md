@@ -12,6 +12,7 @@ A simple, practical driving log app for supervised driving—built for real fami
   <a href="#get-the-app" style="padding:10px 14px; border-radius:10px; background:#111827; color:white; text-decoration:none; font-weight:600;">Get the app</a>
   <a href="#how-it-works" style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">How it works</a>
   <a href="#privacy" style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">Privacy</a>
+  <a href="#export-formats" style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">Export Formats</a>
 </div>
 
 ---
@@ -85,6 +86,34 @@ Permit2Drive does not create user accounts. If you use Google Drive sync, your l
 
 - **Privacy Policy:** [Privacy Policy](/permit2drive-pages/privacy)  
 - **Support:** Email us at info@permit2drive.com
+
+---
+
+## Export Formats
+
+<p>
+Permit2Drive helps track and organize supervised driving hours.
+Driver log requirements vary by state, so please make sure your recorded hours and exported reports meet the requirements of your local licensing authority.
+</p>
+
+<p>The available export formats and examples are:</p>
+
+<div style="display:flex; gap:12px; flex-wrap:wrap; margin: 16px 0;">
+  <a href="examples/Permit2Drive_Example_Log.pdf" target="_blank" rel="noopener noreferrer"
+     style="padding:10px 14px; border-radius:10px; background:#111827; color:white; text-decoration:none; font-weight:600;">
+     View Permit2Drive Example PDF
+  </a>
+
+  <a href="examples/COFormDR2324_Example_Log.pdf" target="_blank" rel="noopener noreferrer"
+     style="padding:10px 14px; border-radius:10px; background:#111827; color:white; text-decoration:none; font-weight:600;">
+     View Colorado DR 2324 Example PDF
+  </a>
+
+  <a href="examples/Permit2Drive_Example_Log.csv"
+     style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">
+     Download Example CSV
+  </a>
+</div>
 
 ---
 
