@@ -1,132 +1,198 @@
-<!-- https://sparkle-ron.github.io/permit2drive-pages/ -->
-
-<div style="text-align:center; margin-top: 1.5rem;">
-  <img src="assets/BannerRoad1020x215.png" alt="Permit2Drive app preview" style="max-width: 900px; width: 100%; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.12);" />
-</div>
-
-# Permit2Drive
-
-A simple, practical driving log app for supervised driving—built for real families and real schedules.
-
-<div style="display:flex; gap:12px; flex-wrap:wrap; margin: 16px 0;">
-  <a href="#get-the-app" style="padding:10px 14px; border-radius:10px; background:#111827; color:white; text-decoration:none; font-weight:600;">Get the app</a>
-  <a href="#how-it-works" style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">How it works</a>
-  <a href="#privacy" style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">Privacy</a>
-  <a href="#export-formats" style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">Export Formats</a>
-</div>
-
+---
+layout: default
+title: Permit2Drive
+description: A simple, practical driving log app for supervised driving hours.
 ---
 
-## Why Permit2Drive
+<!-- /index.md -->
 
-Learning to drive is stressful enough. Permit2Drive helps you log drives quickly, stay organized, and export clean records when you need them.
+<div class="hero">
+  <div class="hero-shell hero-split">
+    <div class="hero-copy">
+      <div class="eyebrow">Supervised driving made simpler</div>
 
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0;">
-  <div style="padding:14px; border:1px solid #e5e7eb; border-radius:14px;">
-    <div style="font-size:18px; font-weight:700;">Fast logging</div>
-    <div style="margin-top:6px; color:#374151;">Start a drive, record conditions, and save with minimal taps.</div>
-  </div>
-  <div style="padding:14px; border:1px solid #e5e7eb; border-radius:14px;">
-    <div style="font-size:18px; font-weight:700;">Day/Night totals</div>
-    <div style="margin-top:6px; color:#374151;">Track progress toward requirements with clear totals.</div>
-  </div>
-  <div style="padding:14px; border:1px solid #e5e7eb; border-radius:14px;">
-    <div style="font-size:18px; font-weight:700;">Export & share</div>
-    <div style="margin-top:6px; color:#374151;">Export logs when needed and share with a supervisor or family.</div>
-  </div>
-  <div style="padding:14px; border:1px solid #e5e7eb; border-radius:14px;">
-    <div style="font-size:18px; font-weight:700;">Local-only option</div>
-    <div style="margin-top:6px; color:#374151;">Prefer not to sync? Use the app locally.</div>
-  </div>
-   <div style="padding:14px; border:1px solid #e5e7eb; border-radius:14px;">
-    <div style="font-size:18px; font-weight:700;">Your Google Drive</div>
-    <div style="margin-top:6px; color:#374151;">
-      No new accounts. No spam emails. Your driving logs are saved to your own Google Drive and stay under your control.
+      <h1>Track drives, stay organized, and export clean records.</h1>
+
+      <p class="lead">
+        Permit2Drive helps families log supervised driving hours with less friction,
+        clearer totals, and export options that are easy to review and share.
+      </p>
+
+      <div class="button-row">
+        <a href="#get-the-app" class="button button-primary">Get the app</a>
+        <a href="#how-it-works" class="button button-secondary">How it works</a>
+        <a href="{{ '/state-requirements' | relative_url }}" class="button button-secondary">State Requirements</a>
+      </div>
     </div>
-  </div>
 
-  <div style="padding:14px; border:1px solid #e5e7eb; border-radius:14px;">
-    <div style="font-size:18px; font-weight:700;">Pause & resume</div>
-    <div style="margin-top:6px; color:#374151;">
-      Pause a drive anytime and resume later—perfect for errands, stops, or long breaks.
+    <div class="hero-visual">
+      <div class="phone-mock">
+        <img src="assets/Android_Pixel3_Driving.png" alt="Permit2Drive driving log screen" />
+      </div>
     </div>
+
   </div>
 </div>
 
----
+<div class="section section-tight">
+  <div class="state-highlight">
+    <div class="state-highlight-content">
+      <div class="state-highlight-text">
+        <h3>Check your state requirements</h3>
+        <p>
+          Driving log requirements vary by state. See whether Permit2Drive is a
+          great fit for your state—and what to watch for.
+        </p>
+      </div>
 
-## Screenshots
+      <a href="{{ '/state-requirements' | relative_url }}" class="button button-primary">
+        View State Requirements
+      </a>
+    </div>
 
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 16px 0;">
-  <img src="assets/Android_Pixel3_HomeScreen.png" alt="Home screen" style="width:100%; border-radius:16px; border:1px solid #e5e7eb;" />
-  <img src="assets/Android_Pixel3_Driving.png" alt="Log a drive screen" style="width:100%; border-radius:16px; border:1px solid #e5e7eb;" />
-  <img src="assets/Android_Pixel3_ExportAndShare.png" alt="Export screen" style="width:100%; border-radius:16px; border:1px solid #e5e7eb;" />
+  </div>
 </div>
 
----
+<div class="section">
+  <h2>Why Permit2Drive</h2>
 
-## How it works
+  <p>
+    Learning to drive is stressful enough. Permit2Drive helps you log drives
+    quickly, stay organized, and export clean records when you need them.
+  </p>
 
-1. **Choose Local Only** or **Sign in with Google** (optional) for Google Drive sync.  
-2. **Start a drive**, set conditions (day/night, notes, etc.), and save.  
-3. **Review totals** and **export** when you need a clean record.
+  <div class="card-grid">
+    <div class="card feature-card">
+      <div class="feature-icon">⏱</div>
+      <h3>Fast logging</h3>
+      <p>Start a drive, record conditions, and save with minimal taps.</p>
+    </div>
 
----
+    <div class="card feature-card">
+      <div class="feature-icon">🌙</div>
+      <h3>Day/Night totals</h3>
+      <p>Track progress toward requirements with clear totals.</p>
+    </div>
 
-## Get the app
+    <div class="card feature-card">
+      <div class="feature-icon">📤</div>
+      <h3>Export &amp; share</h3>
+      <p>Export logs when needed and share with a supervisor or family.</p>
+    </div>
 
-- **Google Play:** _Coming soon_
-- **Internal testing:** If you’re part of the test group, use the invite link you received.
+    <div class="card feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>Local-only option</h3>
+      <p>Prefer not to sync? Use the app locally.</p>
+    </div>
 
----
+    <div class="card feature-card">
+      <div class="feature-icon">☁️</div>
+      <h3>Your Google Drive</h3>
+      <p>
+        No new accounts. No spam emails. Your driving logs are saved to your own
+        Google Drive and stay under your control.
+      </p>
+    </div>
 
-## Privacy
+    <div class="card feature-card">
+      <div class="feature-icon">⏸</div>
+      <h3>Pause &amp; resume</h3>
+      <p>
+        Pause a drive anytime and resume later—perfect for errands, stops, or
+        long breaks.
+      </p>
+    </div>
 
-Permit2Drive does not create user accounts. If you use Google Drive sync, your logs are saved to **your own Google Drive** and you can delete them at any time.
-
-- **Privacy Policy:** [Privacy Policy](/permit2drive-pages/privacy)  
-- **Support:** Email us at info@permit2drive.com
-
----
-
-## Export Formats
-
-<p>
-Permit2Drive helps track and organize supervised driving hours.
-Driver log requirements vary by state, so please make sure your recorded hours and exported reports meet the requirements of your local licensing authority.
-</p>
-
-<p>The available export formats and examples are:</p>
-
-<div style="display:flex; gap:12px; flex-wrap:wrap; margin: 16px 0;">
-  <a href="examples/Permit2Drive_Example_Log.pdf" target="_blank" rel="noopener noreferrer"
-     style="padding:10px 14px; border-radius:10px; background:#111827; color:white; text-decoration:none; font-weight:600;">
-     View Permit2Drive Example PDF
-  </a>
-
-  <a href="examples/COFormDR2324_Example_Log.pdf" target="_blank" rel="noopener noreferrer"
-     style="padding:10px 14px; border-radius:10px; background:#111827; color:white; text-decoration:none; font-weight:600;">
-     View Colorado DR 2324 Example PDF
-  </a>
-
-  <a href="examples/Permit2Drive_Example_Log.csv"
-     style="padding:10px 14px; border-radius:10px; border:1px solid #e5e7eb; text-decoration:none; font-weight:600;">
-     Download Example CSV
-  </a>
+  </div>
 </div>
 
----
+<div class="section">
+  <div class="section-intro">
+    <h2>Screenshots</h2>
+    <p>
+      A quick look at Permit2Drive in action—from the home screen to active
+      drive tracking and export options.
+    </p>
+  </div>
 
-## About
+  <div class="screenshot-row">
+    <div class="screenshot-item">
+      <img src="assets/Android_Pixel3_HomeScreen.png" alt="Home screen" />
+    </div>
 
-Permit2Drive is built to make supervised driving logs simple, accurate, and easy to share.
+    <div class="screenshot-item">
+      <img src="assets/Android_Pixel3_Driving.png" alt="Driving screen" />
+    </div>
 
-<div style="margin: 18px 0; color:#6b7280; font-size: 14px;">
-  © Permit2Drive
+    <div class="screenshot-item">
+      <img src="assets/Android_Pixel3_ExportAndShare.png" alt="Export screen" />
+    </div>
+
+  </div>
 </div>
 
+<div class="section">
+  <div class="container">
+    <div id="how-it-works"></div>
 
-- [Privacy Policy](/permit2drive-pages/privacy)
-- [Support](/permit2drive-pages/support)
-- [Legal](/permit2drive-pages/legal)
+    <h2>How it works</h2>
 
+    <ol>
+      <li>
+        <strong>Choose Local Only</strong> or
+        <strong>Connect with Google</strong> (optional) for Google Drive sync.
+      </li>
+      <li>
+        <strong>Start a drive</strong>, set conditions (day/night, notes, etc.),
+        and save.
+      </li>
+      <li>
+        <strong>Review totals</strong> and <strong>export</strong> when you need
+        a clean record.
+      </li>
+    </ol>
+
+  </div>
+</div>
+
+<div class="section">
+  <div id="get-the-app"></div>
+
+  <div class="cta-app">
+    <h2>Ready to start logging drives?</h2>
+
+    <p>
+      Download Permit2Drive and start tracking supervised driving hours today.
+    </p>
+
+    <div class="store-buttons">
+      <a href="#" class="store-button">
+        <img src="assets/AppleStoreButtonBlack.png" alt="Download on the App Store" />
+      </a>
+
+      <a href="#" class="store-button">
+        <img src="assets/google-play-badge.png" alt="Get it on Google Play" />
+      </a>
+    </div>
+
+    <div class="cta-note">
+      <p>
+        Currently in testing. App Store availability coming soon.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="section section-tight">
+  <div class="container">
+    <h2>About</h2>
+
+    <p>
+      Permit2Drive is built to make supervised driving logs simple, accurate,
+      and easy to share.
+    </p>
+
+  </div>
+</div>

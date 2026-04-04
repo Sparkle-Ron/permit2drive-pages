@@ -1,0 +1,475 @@
+<hr />
+
+<!-- Search Box -->
+<div style="margin: 20px 0">
+  <label for="stateSearch" style="display: block; font-weight: 600; margin-bottom: 8px">
+    Find your state
+  </label>
+  <input
+    id="stateSearch"
+    type="text"
+    placeholder="Enter state abbreviation (e.g. CA or TX)"
+    style="
+      width: 100%;
+      max-width: 360px;
+      padding: 10px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 16px;
+    "
+    oninput="filterStates()"
+  />
+  <div id="stateSearchResult" style="margin-top: 10px; color: #374151"></div>
+</div>
+
+<hr />
+
+<!-- Colorado Callout -->
+<div
+  style="
+    padding: 16px;
+    border: 1px solid #d1fae5;
+    background: #ecfdf5;
+    border-radius: 14px;
+    margin: 20px 0;
+  "
+>
+  <div style="font-size: 18px; font-weight: 700">Colorado users</div>
+  <div style="margin-top: 6px; color: #065f46">
+    Permit2Drive includes support for the Colorado DR 2324 driving log format.
+  </div>
+</div>
+
+<hr />
+
+<div
+  style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  "
+>
+  <!-- Works Great -->
+  <div style="padding: 16px; border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 14px">
+    <div style="font-size: 20px; font-weight: 700">Works great with</div>
+    <div style="margin-top: 8px; color: #374151">
+      States that allow a general driving log or do not require a specific official form.
+    </div>
+
+    <div style="margin-top: 14px">
+      <div style="font-weight: 600; margin-bottom: 6px">No official form</div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 6px">
+        <span
+          class="state-chip works-great"
+          data-state="AL"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          AL
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="AZ"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          AZ
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="AR"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          AR
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="CA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          CA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="FL"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          FL
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="GA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          GA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="IN"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          IN
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="KS"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          KS
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="KY"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          KY
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="LA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          LA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="MI"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          MI
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="MS"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          MS
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="MO"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          MO
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NE"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NE
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NV"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NV
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NC"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NC
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="OH"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          OH
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="OK"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          OK
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="PA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          PA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="SC"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          SC
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="SD"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          SD
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="TN"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          TN
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="TX"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          TX
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="WI"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          WI
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="WY"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          WY
+        </span>
+      </div>
+    </div>
+
+    <div style="margin-top: 14px">
+      <div style="font-weight: 600; margin-bottom: 6px">Generic log allowed</div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 6px">
+        <span
+          class="state-chip works-great"
+          data-state="AK"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          AK
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="DE"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          DE
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="HI"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          HI
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="ID"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          ID
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="IA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          IA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="ME"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          ME
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="MN"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          MN
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="MT"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          MT
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NH"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NH
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NJ"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NJ
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NM"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NM
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="NY"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          NY
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="OR"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          OR
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="RI"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          RI
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="VT"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          VT
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="VA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          VA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="WA"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          WA
+        </span>
+        <span
+          class="state-chip works-great"
+          data-state="WV"
+          style="padding: 4px 8px; border: 1px solid #a7f3d0; background: white; border-radius: 8px"
+        >
+          WV
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Not Ideal -->
+  <div style="padding: 16px; border: 1px solid #fde68a; background: #fffbeb; border-radius: 14px">
+    <div style="font-size: 20px; font-weight: 700">May not be the best choice</div>
+    <div style="margin-top: 8px; color: #374151">
+      States that require a formal state-issued driving log or DMV-specific form.
+    </div>
+
+    <div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px">
+      <span
+        class="state-chip not-ideal"
+        data-state="CT"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        CT
+      </span>
+      <span
+        class="state-chip not-ideal"
+        data-state="DC"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        DC
+      </span>
+      <span
+        class="state-chip not-ideal"
+        data-state="IL"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        IL
+      </span>
+      <span
+        class="state-chip not-ideal"
+        data-state="MD"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        MD
+      </span>
+      <span
+        class="state-chip not-ideal"
+        data-state="MA"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        MA
+      </span>
+      <span
+        class="state-chip not-ideal"
+        data-state="ND"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        ND
+      </span>
+      <span
+        class="state-chip not-ideal"
+        data-state="UT"
+        style="padding: 4px 8px; border: 1px solid #fcd34d; background: white; border-radius: 8px"
+      >
+        UT
+      </span>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<!-- Script for Search -->
+<script>
+  function filterStates() {
+    const input = document.getElementById("stateSearch")
+    const result = document.getElementById("stateSearchResult")
+    const query = input.value.trim().toUpperCase()
+    const chips = document.querySelectorAll(".state-chip")
+
+    chips.forEach((chip) => {
+      chip.style.outline = "none"
+      chip.style.transform = "none"
+    })
+
+    if (!query) {
+      result.textContent = ""
+      return
+    }
+
+    const match = Array.from(chips).find((chip) => chip.dataset.state === query)
+
+    if (!match) {
+      result.textContent = "State not found. Use 2-letter abbreviation."
+      return
+    }
+
+    match.style.outline = "3px solid #111827"
+    match.style.outlineOffset = "2px"
+    match.style.transform = "scale(1.05)"
+
+    const category = match.classList.contains("works-great")
+      ? "Permit2Drive works great for this state."
+      : "Permit2Drive may not be the best choice for this state."
+
+    result.textContent = query + ": " + category
+    match.scrollIntoView({ behavior: "smooth", block: "center" })
+  }
+</script>

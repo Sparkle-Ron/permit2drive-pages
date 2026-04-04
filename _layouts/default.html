@@ -1,0 +1,28 @@
+<!-- /_layouts/default.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Permit2Drive</title>
+
+    <meta
+      name="description"
+      content="{% if page.description %}{{ page.description }}{% else %}Permit2Drive helps families track supervised driving hours and export clean driving logs.{% endif %}"
+    />
+
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  </head>
+  <body>
+    {% include header.html %}
+
+    <main class="site-main">
+      <div class="container">{{ content }}</div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
