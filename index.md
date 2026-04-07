@@ -27,7 +27,7 @@ description: A simple, practical driving log app for supervised driving hours.
 
     <div class="hero-visual">
       <div class="phone-mock">
-        <img src="assets/Android_Pixel3_Driving.png" alt="Permit2Drive driving log screen" />
+        <img src="assets/Android_Pixel6_Driving.png" alt="Permit2Drive driving log screen" />
       </div>
     </div>
 
@@ -53,6 +53,7 @@ description: A simple, practical driving log app for supervised driving hours.
   </div>
 </div>
 
+<!-- Why Permit2Drive Section -->
 <div class="section">
   <h2>Why Permit2Drive</h2>
 
@@ -81,6 +82,15 @@ description: A simple, practical driving log app for supervised driving hours.
     </div>
 
     <div class="card feature-card">
+      <div class="feature-icon">🔄</div>
+      <h3>Import from RoadReady</h3>
+      <p>
+        Already using RoadReady? Bring your existing drives into Permit2Drive and
+        continue tracking without starting over.
+      </p>
+    </div>
+
+    <div class="card feature-card">
       <div class="feature-icon">📱</div>
       <h3>Local-only option</h3>
       <p>Prefer not to sync? Use the app locally.</p>
@@ -96,6 +106,15 @@ description: A simple, practical driving log app for supervised driving hours.
     </div>
 
     <div class="card feature-card">
+      <div class="feature-icon">👥</div>
+      <h3>Multiple drivers &amp; supervisors</h3>
+      <p>
+        Track drives for multiple drivers and supervisors in one place—ideal for
+        families with more than one learner.
+      </p>
+    </div>
+
+    <div class="card feature-card">
       <div class="feature-icon">⏸</div>
       <h3>Pause &amp; resume</h3>
       <p>
@@ -107,31 +126,42 @@ description: A simple, practical driving log app for supervised driving hours.
   </div>
 </div>
 
+<!-- Screenshots Section -->
+<!-- Screenshots Section -->
 <div class="section">
-  <div class="section-intro">
-    <h2>Screenshots</h2>
+  <div class="section-intro center">
+    <h2>See Permit2Drive in action</h2>
     <p>
-      A quick look at Permit2Drive in action—from the home screen to active
-      drive tracking and export options.
+      From starting a drive to tracking progress and exporting logs,
+      everything is designed to be simple and clear.
     </p>
+  </div>
+
+  <div class="screenshot-feature">
+    <img src="assets/Android_Pixel6_Driving.png" alt="Driving screen" />
+    <p class="screenshot-caption">Start a drive in seconds</p>
   </div>
 
   <div class="screenshot-row">
     <div class="screenshot-item">
-      <img src="assets/Android_Pixel3_HomeScreen.png" alt="Home screen" />
+      <img src="assets/Android_Pixel6_TotalsAndSummary.png" alt="Totals screen" />
+      <p class="screenshot-caption">See your progress at a glance</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="assets/Android_Pixel3_Driving.png" alt="Driving screen" />
+      <img src="assets/Android_Pixel6_ExportAndShare.png" alt="Export screen" />
+      <p class="screenshot-caption">Export clean logs when you need them</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="assets/Android_Pixel3_ExportAndShare.png" alt="Export screen" />
+      <img src="assets/Android_Pixel6_DriveHistory.png" alt="History screen" />
+      <p class="screenshot-caption">Stay organized with a clear drive history</p>
     </div>
 
   </div>
 </div>
 
+<!-- How it works section -->
 <div class="section">
   <div class="container">
     <div id="how-it-works"></div>
