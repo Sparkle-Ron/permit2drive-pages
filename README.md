@@ -5,6 +5,10 @@ Documentation for Permit 2 Drive app
 - in terminal run: bundle exec jekyll serve --livereload
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 
+### Changes 4/6/2026
+- Add icon assets and update default.html to provide browser icons
+- Small tweak to the home page cards
+
 ### Changes 4/3/2026
 - Update files to support LiveReload
 - Add State Requirements page
