@@ -4,6 +4,12 @@ Documentation for Permit 2 Drive app
 # Running Viewer
 - in terminal run: bundle exec jekyll serve --livereload
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
+------------------------------------------------------------------
+
+### Changes 4/7/2026
+- Add RR import and multiple drivers/supervisors to home page
+- Update phone images
+- Update FAQ
 
 ### Changes 4/6/2026
 - Add icon assets and update default.html to provide browser icons
