@@ -388,7 +388,7 @@ p {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
+  gap: 14px;
   margin-top: 24px;
 }
 
@@ -403,7 +403,7 @@ p {
   margin-bottom: 0;
 }
 .feature-card {
-  padding: 22px;
+  padding: 18px;
   border-radius: 18px;
   background: linear-gradient(to bottom, #ffffff, #fbfcff);
   border: 1px solid #e5e7eb;
