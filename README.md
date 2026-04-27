@@ -13,9 +13,13 @@ Documentation for Permit 2 Drive app
     support.md
 
 # Running Viewer
-- in terminal run: bundle exec jekyll serve --livereload
+- in terminal run: *bundle exec jekyll serve --livereload*
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
+
+### Changes 4/27/2026
+- Update images to new Road skin
+- Update FAQ with new features (skins, Ad-free)
 
 ### Changes 4/8/2026
 - Add about page
