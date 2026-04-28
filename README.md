@@ -18,6 +18,9 @@ Documentation for Permit 2 Drive app
 ------------------------------------------------------------------
 
 ### Changes 4/27/2026
+- Add partners page
+
+### Changes 4/27/2026
 - Update images to new Road skin
 - Update FAQ with new features (skins, Ad-free)
 
