@@ -714,6 +714,21 @@ p {
   margin-top: 0;
 }
 
+/* Content pages */
+.narrow-page {
+  max-width: 850px;
+}
+
+.narrow-page h2 {
+  margin-top: 32px;
+}
+
+.narrow-page p:last-child,
+.narrow-page ul:last-child,
+.narrow-page ol:last-child {
+  margin-bottom: 0;
+}
+
 /* Utilities */
 .muted {
   color: #6b7280;

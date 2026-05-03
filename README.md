@@ -17,6 +17,9 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 5/3/2026
+- Add Terms & Conditions page
+
 ### Changes 4/27/2026
 - Add partners page
 
