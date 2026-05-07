@@ -44,10 +44,14 @@
         })
       }
 
+      const pageParams = new URLSearchParams(window.location.search)
+      const LOGIN_HINT = pageParams.get("loginHint") || ""
+
       function onGisLoaded() {
         tokenClient = google.accounts.oauth2.initTokenClient({
           client_id: CLIENT_ID,
           scope: SCOPE,
+          hint: LOGIN_HINT || undefined,
           callback: (response) => {
             if (response.error) {
               log(response)
@@ -66,7 +70,7 @@
           return
         }
 
-        tokenClient.requestAccessToken({ prompt: "consent" })
+        tokenClient.requestAccessToken({ prompt: "" })
       }
 
       function createPicker() {
@@ -92,12 +96,22 @@
 
             if (data.action === google.picker.Action.PICKED) {
               const doc = data.docs && data.docs[0]
-              log({
-                id: doc.id,
-                name: doc.name || doc.title,
-                mimeType: doc.mimeType,
-                url: doc.url,
-              })
+
+              const params = new URLSearchParams(window.location.search)
+              const returnUrl = params.get("returnUrl") || "permit2drive://google-picker"
+
+              const separator = returnUrl.includes("?") ? "&" : "?"
+              const target =
+                returnUrl +
+                separator +
+                "fileId=" +
+                encodeURIComponent(doc.id || "") +
+                "&name=" +
+                encodeURIComponent(doc.name || doc.title || "") +
+                "&mimeType=" +
+                encodeURIComponent(doc.mimeType || "")
+
+              window.location.href = target
             }
           })
           .build()
