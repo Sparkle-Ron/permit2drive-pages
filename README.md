@@ -17,6 +17,10 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 5/17/2026
+- Update to reflect App change to use Firebase instead of Google Drive
+- Remove TEST for Permit2Drive Google File Picker.  
+
 ### Changes 5/6/2026
 - TEST for Permit2Drive Google File Picker.  
     * google-picker-test.html:  We can remove this later
