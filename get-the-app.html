@@ -1,0 +1,160 @@
+---
+layout: default
+title: Get Permit2Drive
+description: Download Permit2Drive for iPhone, iPad, Mac, or Android.
+permalink: /get-the-app/
+---
+
+<!-- /get-the-app.html -->
+
+<section class="section">
+  <div class="container">
+    <div id="store-router-message" class="cta-app">
+      <h1>Getting you to the right place…</h1>
+
+      <p>We’re checking your device so we can send you to the right app store.</p>
+
+      <p class="cta-availability">If you are not redirected, you can choose your store below.</p>
+    </div>
+
+    <div id="manual-store-options" class="cta-app" hidden>
+      <h1>Ready to start logging drives?</h1>
+
+      <p>Download Permit2Drive and start tracking supervised driving hours today.</p>
+
+      <div class="store-buttons">
+        <a
+          href="https://apps.apple.com/us/app/permit2drive-driver-log/id6758968154"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="store-button"
+        >
+          <img
+            src="{{ '/assets/AppleStoreButtonBlack.png' | relative_url }}"
+            alt="Download on the App Store"
+          />
+        </a>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.sparklerevolution.permit2drive"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="store-button"
+        >
+          <img
+            src="{{ '/assets/google-play-badge.png' | relative_url }}"
+            alt="Get it on Google Play"
+          />
+        </a>
+      </div>
+
+      <div class="cta-note">
+        <p class="cta-availability">
+          Available now on the App Store and Google Play.
+          <br />
+          We’re still refining the app—feedback is welcome.
+        </p>
+
+        <p>
+          <a href="mailto:help@permit2drive.com" class="text-link">
+            Have feedback or suggestions? Let us know →
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="cta-app">
+        <h1>Ready to start logging drives?</h1>
+
+        <p>Download Permit2Drive from the App Store or Google Play.</p>
+
+        <div class="store-buttons">
+          <a
+            href="https://apps.apple.com/us/app/permit2drive-driver-log/id6758968154"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="store-button"
+          >
+            <img
+              src="{{ '/assets/AppleStoreButtonBlack.png' | relative_url }}"
+              alt="Download on the App Store"
+            />
+          </a>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sparklerevolution.permit2drive"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="store-button"
+          >
+            <img
+              src="{{ '/assets/google-play-badge.png' | relative_url }}"
+              alt="Get it on Google Play"
+            />
+          </a>
+        </div>
+      </div>
+    </noscript>
+  </div>
+</section>
+
+<script>
+  ;(function () {
+    var appStoreWebUrl = "https://apps.apple.com/us/app/permit2drive-driver-log/id6758968154"
+    var appStoreAppUrl = "itms-apps://itunes.apple.com/app/id6758968154"
+
+    var playStoreWebUrl =
+      "https://play.google.com/store/apps/details?id=com.sparklerevolution.permit2drive"
+    var playStoreAppUrl = "market://details?id=com.sparklerevolution.permit2drive"
+
+    var userAgent = navigator.userAgent || ""
+    var platform = navigator.platform || ""
+    var maxTouchPoints = navigator.maxTouchPoints || 0
+
+    var isAndroid = /Android/i.test(userAgent)
+
+    var isIOS =
+      /iPhone|iPad|iPod/i.test(userAgent) || (platform === "MacIntel" && maxTouchPoints > 1)
+
+    var isMac = /Macintosh|Mac OS X/i.test(userAgent) || platform.indexOf("Mac") === 0
+
+    var storeAppUrl = null
+    var storeWebUrl = null
+
+    if (isAndroid) {
+      storeAppUrl = playStoreAppUrl
+      storeWebUrl = playStoreWebUrl
+    } else if (isIOS || isMac) {
+      storeAppUrl = appStoreAppUrl
+      storeWebUrl = appStoreWebUrl
+    }
+
+    var message = document.getElementById("store-router-message")
+    var manualOptions = document.getElementById("manual-store-options")
+
+    if (storeAppUrl && storeWebUrl) {
+      window.setTimeout(function () {
+        window.location.href = storeAppUrl
+      }, 700)
+
+      window.setTimeout(function () {
+        window.location.href = storeWebUrl
+      }, 1800)
+
+      window.setTimeout(function () {
+        if (manualOptions) {
+          manualOptions.hidden = false
+        }
+      }, 2500)
+    } else {
+      if (message) {
+        message.hidden = true
+      }
+
+      if (manualOptions) {
+        manualOptions.hidden = false
+      }
+    }
+  })()
+</script>

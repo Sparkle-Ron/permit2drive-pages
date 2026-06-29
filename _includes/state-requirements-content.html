@@ -26,6 +26,7 @@
 
 <!-- Colorado Callout -->
 <div
+  id="colorado-users"
   style="
     padding: 16px;
     border: 1px solid #d1fae5;
@@ -443,14 +444,34 @@
     const result = document.getElementById("stateSearchResult")
     const query = input.value.trim().toUpperCase()
     const chips = document.querySelectorAll(".state-chip")
+    const coloradoUsers = document.getElementById("colorado-users")
 
     chips.forEach((chip) => {
       chip.style.outline = "none"
       chip.style.transform = "none"
     })
 
+    if (coloradoUsers) {
+      coloradoUsers.style.outline = "none"
+      coloradoUsers.style.transform = "none"
+    }
+
     if (!query) {
       result.textContent = ""
+      return
+    }
+
+    if (query === "CO" || query === "COLORADO") {
+      result.textContent =
+        "Colorado: Permit2Drive includes support for the Colorado DR 2324 driving log format."
+
+      if (coloradoUsers) {
+        coloradoUsers.style.outline = "3px solid #111827"
+        coloradoUsers.style.outlineOffset = "2px"
+        coloradoUsers.style.transform = "scale(1.02)"
+        coloradoUsers.scrollIntoView({ behavior: "smooth", block: "center" })
+      }
+
       return
     }
 

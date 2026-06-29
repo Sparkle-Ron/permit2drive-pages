@@ -17,6 +17,16 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 6/29/2026
+- Updated partners page to include flyers
+    * Added flyers to assets/docs
+- Split get-the-app to another page
+    * Auto route users to the right store
+    * Link other pages to this new page
+- Added partners link to the footer
+- Included CO/Colorado in the state-requirements search
+- Updated ExportAndShare.png to show 'backup' wording
+
 ### Changes 5/17/2026
 - Update to reflect App change to use Firebase instead of Google Drive
 - Remove TEST for Permit2Drive Google File Picker.  
