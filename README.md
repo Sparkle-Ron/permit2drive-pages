@@ -26,6 +26,7 @@ Documentation for Permit 2 Drive app
 - Added partners link to the footer
 - Included CO/Colorado in the state-requirements search
 - Updated ExportAndShare.png to show 'backup' wording
+- Update PDFs to not have .pptx in the info name
 
 ### Changes 5/17/2026
 - Update to reflect App change to use Firebase instead of Google Drive
