@@ -28,7 +28,15 @@ You can also include:
       <p>Start tracking driving hours with a simple, practical app designed for real life.</p>
 
       <div class="button-row center">
-        <a href="{{ '/' | relative_url }}#get-the-app" class="button button-primary">Get the app</a>
+         <a
+          href="{{ '/get-the-app/' | relative_url }}"
+          class="button button-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          Get the app
+        </a>
+
       </div>
     </div>
 
