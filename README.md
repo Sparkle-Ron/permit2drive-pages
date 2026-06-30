@@ -17,6 +17,9 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 6/30/2026
+- Update state requirements page
+
 ### Changes 6/29/2026
 - Updated partners page to include flyers
     * Added flyers to assets/docs
