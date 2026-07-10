@@ -43,6 +43,7 @@ TODO (add custom export log section)
 - Included CO/Colorado in the state-requirements search
 - Updated ExportAndShare.png to show 'backup' wording
 - Update PDFs to not have .pptx in the info name
+- Update ExportAndShare.png to reflect app updates
 
 ### Changes 5/17/2026
 - Update to reflect App change to use Firebase instead of Google Drive
