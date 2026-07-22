@@ -17,6 +17,10 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 7/16/2026
+- Streamline partners page
+    * Add Google Ads handout
+
 ### Changes 7/10/2026
 - Update state requirements pages to support updated official form exports
 - Update partners page
