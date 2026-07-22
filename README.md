@@ -17,6 +17,9 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 7/22/2026
+- Add delete-account page to comply with Google Play
+
 ### Changes 7/16/2026
 - Streamline partners page
     * Add Google Ads handout
