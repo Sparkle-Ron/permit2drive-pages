@@ -17,8 +17,28 @@ Documentation for Permit 2 Drive app
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
 
+### Changes 7/22/2026
+- Add delete-account page to comply with Google Play
+
+### Changes 7/16/2026
+- Streamline partners page
+    * Add Google Ads handout
+
+### Changes 7/10/2026
+- Update state requirements pages to support updated official form exports
+- Update partners page
+    * Remove the 'download PDF' buttons
+    * Add a printer friendly (greyscale) student/parent PDF
+- Update P2D export example with new format
+
 ### Changes 6/30/2026
 - Update state requirements page
+- More updates to requirements pages
+    * PA - no form needed (strong fit)
+    * MI - no form needed (strong fit)
+TODO (add custom export log section)
+    * IL - added custom form to app
+    * NC - added custom form to app
 
 ### Changes 6/29/2026
 - Updated partners page to include flyers
@@ -30,6 +50,7 @@ Documentation for Permit 2 Drive app
 - Included CO/Colorado in the state-requirements search
 - Updated ExportAndShare.png to show 'backup' wording
 - Update PDFs to not have .pptx in the info name
+- Update ExportAndShare.png to reflect app updates
 
 ### Changes 5/17/2026
 - Update to reflect App change to use Firebase instead of Google Drive
