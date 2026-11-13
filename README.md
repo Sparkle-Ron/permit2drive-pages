@@ -20,6 +20,7 @@ Documentation for Permit 2 Drive app
 - Add prototype ad images to the assets directory
 - Update test images
 - Update test images again2
+- Add test video
 
 ### Changes 7/31/2026
 - Update Privacy page to include GA
