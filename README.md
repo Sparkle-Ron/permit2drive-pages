@@ -18,7 +18,11 @@ Documentation for Permit 2 Drive app
 ------------------------------------------------------------------
 ### Changes 11/23/2026
 - Add connectivity.txt to help with ad online check
-
+- Update home page (index.html) to highlight:
+    * “We log your drives. We don’t track you.”
+    * Easy to use
+    * Free to use
+    
 ### Changes 11/12/2026
 - Add prototype ad images to the assets directory
 - Update test images
