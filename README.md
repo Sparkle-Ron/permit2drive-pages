@@ -16,6 +16,9 @@ Documentation for Permit 2 Drive app
 - in terminal run: *bundle exec jekyll serve --livereload*
 - Open browser to http://localhost:4000 (or differnt server address as on terminal)
 ------------------------------------------------------------------
+### Changes 11/23/2026
+- Add connectivity.txt to help with ad online check
+
 ### Changes 11/12/2026
 - Add prototype ad images to the assets directory
 - Update test images
