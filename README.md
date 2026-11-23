@@ -22,6 +22,10 @@ Documentation for Permit 2 Drive app
     * “We log your drives. We don’t track you.”
     * Easy to use
     * Free to use
+- Update privacy page
+    * to cover both ad paths:
+        * legacy versions that still use Google Mobile Ads
+        * the upcoming custom-ad release with impression/click and rotation data
     
 ### Changes 11/12/2026
 - Add prototype ad images to the assets directory

@@ -8,7 +8,7 @@ description: Learn how Permit2Drive handles your account, driving log data, anal
 
 # Privacy Policy – Permit2Drive
 
-**Last updated:** July 2026
+**Last updated:** November 23, 2026
 
 Permit2Drive is designed to help learner drivers, families, and supervisors track supervised driving practice, review driving totals, share access when needed, and export driving log records.
 
@@ -27,6 +27,7 @@ This may include:
 - Import and export activity needed to process files you choose to import or export
 - Purchase information needed to provide or restore optional purchases, such as an ad-free upgrade
 - App usage information, such as app launches, screens viewed, features used, button selections, and export or purchase events
+- Ad delivery information, such as whether an ad was displayed or tapped and an ad rotation value associated with your user account
 - Technical information, such as app version, device or app identifiers, general device information, diagnostic information, crash information, and approximate location inferred from an internet connection
 
 Permit2Drive does not ask for more information than is reasonably needed to provide, support, secure, and improve the app.
@@ -46,6 +47,7 @@ We use your information to provide and support Permit2Drive, including:
 - Troubleshooting bugs, crashes, or technical issues
 - Understanding how app features are used
 - Measuring app performance and improving the app
+- Managing and measuring ad delivery, including rotating ads and recording ad display or tap events
 
 We do **not** sell your driving log data.
 
@@ -66,7 +68,7 @@ We use this information to:
 
 Analytics information is not intended to include the contents of your driving log, such as your drive notes, driver names, supervisor names, or detailed driving history.
 
-Google Analytics for Firebase provides app-usage and engagement reporting based on events and device-related information. :contentReference[oaicite:2]{index=2}
+Google Analytics for Firebase provides app-usage and engagement reporting based on events and device-related information.
 
 ## Where Your Data Is Stored
 
@@ -112,13 +114,15 @@ Permit2Drive may eventually remove accounts and associated driving log data afte
 
 Permit2Drive may show ads in some versions of the app. Ads help support the app and keep it available to more families.
 
-Advertising services may process information such as app interactions, device or app identifiers, diagnostic information, and approximate location inferred from an internet connection for purposes such as displaying ads, measuring ad performance, analytics, and preventing fraud.
+Versions using our custom ad system display ads selected and managed by Sparkle Revolution and delivered through Firebase and Google Cloud services. To manage ad delivery, the system stores an ad rotation value associated with your user account to determine which ad is shown next. It may also record whether an ad was displayed or tapped. These records are used to rotate and measure ad delivery. The services that deliver ads may also process technical information needed to handle an ad request.
 
-The Google Mobile Ads SDK may collect and share IP-derived approximate location, product interactions, diagnostics, and device or account identifiers for advertising, analytics, and fraud-prevention purposes. :contentReference[oaicite:3]{index=3}
+Older versions of Permit2Drive still in use may use the Google Mobile Ads SDK. In those versions, Google Mobile Ads may process information such as IP-derived approximate location, product interactions, diagnostics, and device or account identifiers for advertising, analytics, and fraud-prevention purposes.
+
+If you tap an ad, it may open an external website or service. That destination is operated by another organization and is subject to its own privacy practices.
+
+We do not use the contents of your driving log, including driver names, supervisor names, notes, or drive history, to select ads or for advertising profiling. Permit2Drive does not use your driving log to follow your route or monitor your drives in real time.
 
 Permit2Drive may also offer optional in-app purchases, such as an ad-free upgrade. Purchases are handled by the applicable app store, such as Apple’s App Store or Google Play, and may also be processed by services used to verify and restore purchases.
-
-We do not use the contents of your driving log for advertising or profiling.
 
 ## Children’s Privacy
 
@@ -145,7 +149,7 @@ We may use trusted service providers to operate Permit2Drive, including services
 
 These providers may process information as needed to provide their services to us and help us operate, secure, analyze, and improve Permit2Drive.
 
-These providers may include Firebase and Google Cloud services, Google Analytics for Firebase, Google Mobile Ads, Apple, Google Play, and services used to manage in-app purchases.
+These providers may include Firebase and Google Cloud services, Google Analytics for Firebase, Google Mobile Ads in versions that use it, Apple, Google Play, and services used to manage in-app purchases.
 
 ## Data Security
 
